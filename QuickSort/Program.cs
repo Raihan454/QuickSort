@@ -78,7 +78,7 @@ namespace QuickSort
                 }
                 cmp_count++;
 
-                if (i < j);
+                if (i < j) ;
 
                 //if the greater element is on the left of the element
 
@@ -101,9 +101,21 @@ namespace QuickSort
 
             //sort the list on the right of pivot using quick sort
             q_sort(j + 1, high);
-        
 
-    }
+        }
+        void display()
+        {
+            Console.WriteLine("\n-------------------");
+            Console.WriteLine("Sorted Array Elements");
+            Console.WriteLine("\n-------------------");
+
+            for (int j = 0; j < n; j++)
+            {
+                Console.WriteLine(arr[j]);
+            }
+            Console.WriteLine("\n Number of Comparison: " + cmp_count);
+            Console.WriteLine("\n Number of Data Movements: " + mov_count);
         }
 
     }
+}
