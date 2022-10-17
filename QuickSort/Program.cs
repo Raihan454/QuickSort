@@ -70,6 +70,19 @@ namespace QuickSort
                 }
                 cmp_count++;
 
+                //search for an element less than or equal to pivot
+                while ((arr[j]) > pivot && (j >= low))
+                {
+                    j--;
+                    cmp_count++;
+                }
+                cmp_count++;
+
+                if (i < j); 
+                
+                //if the greater element is on the left of the element
+
+
             }
         }
 
